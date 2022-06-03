@@ -10,4 +10,4 @@ cd image-api/
 docker-compose up --build
 
 ```
-Now you can access API on [htpp://localhost:8000](http://localhost:8080)
+Now you can access API on [htpp://localhost:8000](http://localhost:8000)
