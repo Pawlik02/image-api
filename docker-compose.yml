@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    command: python project/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+  makemigrations:
+    build: .
+    command: python project/manage.py makemigrations image_api
+    volumes:
+      - .:/code
+    ports:
+      - "8001:8001"
+  migrate:
+    build: .
+    command: python project/manage.py migrate
+    volumes:
+      - .:/code
+    ports:
+      - "8002:8002"
