@@ -22,3 +22,10 @@ services:
       - .:/code
     ports:
       - "8002:8002"
+  loaddata:
+    build: .
+    command: python project/manage.py loaddata db.json
+    volumes:
+      - .:/code
+    ports:
+      - "8002:8002"
