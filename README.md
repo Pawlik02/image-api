@@ -12,7 +12,7 @@ docker-compose up --build
 ```
 Now you can access API on [htpp://localhost:8000](http://localhost:8000)
 
-There is already a created user with these credentials
+There is an already created user with these credentials
 ```
 login: admin
 password: 1@qwerty
